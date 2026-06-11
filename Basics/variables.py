@@ -5,7 +5,7 @@ name = 'Tendulkar'
 print('Hello',name)
 
 
-# Problem 3 — Input from User
+# Problem 2.1 — Input from User
 # Take a name from the user and print it.
 
 names=input('Enter Your Name:')
