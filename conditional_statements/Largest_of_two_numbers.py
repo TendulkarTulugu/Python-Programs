@@ -7,3 +7,13 @@ if n1>n2:
     print('n1 is larger')
 else:
     print('n2 is larger')
+    
+    
+# if a=10 & b=10 then it shows b is larger, so we need to change the case using elif
+
+if n1>n2:
+    print('n1 is larger')
+elif n1<n2:
+    print('n2 is larger')
+else:
+    print('both are equal')
