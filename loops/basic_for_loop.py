@@ -6,7 +6,7 @@ for i in range(5):
 
 
 
-# for (starting,ending,direction)
+# for (starting,ending)
 
 #Starting: starting values
 # ending: it excludes the upper boundary. if end is 10, it excludes 10 and takes upto 9.

@@ -11,3 +11,5 @@ for i in range(0,10,2):
 
 for i in range(1,20,2):
     print(i)
+
+# from 1 every time it'll add +2 everytime  that is step value

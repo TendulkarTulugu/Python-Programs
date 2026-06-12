@@ -16,3 +16,5 @@ n=int(int(input()))
 for i in range(1,n+1):
     total+=i
 print(total)
+
+# Never modify important input variables unnecessarily
