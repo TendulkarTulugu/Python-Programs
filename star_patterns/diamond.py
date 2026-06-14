@@ -25,3 +25,6 @@ for z in range(2,6):
     print()
 
 # it prints the diamond
+#----------------------------------
+
+# here the diamond is of static number we can made dynamic as taking input and performing on that.
