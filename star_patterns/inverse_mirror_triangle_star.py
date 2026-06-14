@@ -1,9 +1,11 @@
 """
+
 *****
  ****
   ***
    **
     *
+
 """
 # mirror of the triangle that already inversed
 
