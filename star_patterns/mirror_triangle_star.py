@@ -2,13 +2,11 @@
 New Pattern ⭐
 
 Now let's introduce spaces.
-
     *
    **
   ***
  ****
 *****
-
 """
 # 1st it take 4 spaces and 1 star- 3 spaces and 2 stars -- as incrementing spaces decreases and stars increases
 
