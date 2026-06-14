@@ -14,7 +14,7 @@ print(s)
 
 print(sum(range(1,6)))
 
-
+# -------------------------------------------------------
 # Sum of Even Numbers
 
 total=0
@@ -22,6 +22,9 @@ for i in range(0,11,2):
     total+=i
 print(total)
 
+
+
+# ----------------------------------------------------------
 # Sum of odd Numbers
 
 t=0
