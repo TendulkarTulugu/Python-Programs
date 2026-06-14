@@ -1,7 +1,7 @@
 # Next Small String Problem 🔥
 
 # Count how many characters are in a string.
-
+# input should given by the user.
 
 
 word=input()
