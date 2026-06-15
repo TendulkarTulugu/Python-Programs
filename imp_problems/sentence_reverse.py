@@ -1,3 +1,6 @@
+
+# take a sentence and reverse each word in the sentence and print in the same format
+
 s="Let's take LeetCode contest"
 w=s.split(' ')
 print(w)
