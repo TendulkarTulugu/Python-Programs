@@ -1,5 +1,7 @@
 # count number of vowels
 
+# count no.of consonants also
+
 cons=0
 vow=0
 word=input().lower()
