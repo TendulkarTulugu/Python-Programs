@@ -1,3 +1,5 @@
+# count number of vowels in the give word
+
 word=input().lower()
 vowels=0
 for ch in word:
