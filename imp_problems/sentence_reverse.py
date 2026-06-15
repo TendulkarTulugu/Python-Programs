@@ -5,6 +5,9 @@ s="Let's take LeetCode contest"
 w=s.split(' ')
 print(w)
 wr=''
+
+# here i'm reversing each word and storing using concatinating
+
 rev=''
 for ch in w:
     wr=ch+' '+wr
