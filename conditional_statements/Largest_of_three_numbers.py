@@ -15,6 +15,7 @@ elif n3>n1 and n3>n2:
 else:
     print('all are equal')
     
+# max function
     
 # we can do this using a built-in-function called 'max()'
 
