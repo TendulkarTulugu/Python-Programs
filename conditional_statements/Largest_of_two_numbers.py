@@ -8,7 +8,8 @@ if n1>n2:
 else:
     print('n2 is larger')
     
-    
+# comparing numbers
+
 # if a=10 & b=10 then it shows b is larger, so we need to change the case using elif
 
 if n1>n2:
