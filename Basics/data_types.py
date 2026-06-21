@@ -23,5 +23,12 @@ print(type(bin))
 
 
 
+# for octal values
+
+oct=0o17
+print(oct)
+print(type(oct))
+
+
 
 
