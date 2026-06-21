@@ -30,5 +30,9 @@ print(oct)
 print(type(oct))
 
 
+# for hex decimal valus
 
+hex=0xFF
+print(hex)
+print(type(hex))
 
