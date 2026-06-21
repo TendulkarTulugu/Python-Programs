@@ -36,3 +36,27 @@ hex=0xFF
 print(hex)
 print(type(hex))
 
+
+
+
+
+#==========================================================================================================================================
+
+# Float
+
+pi=3.14
+print(pi)
+
+avogadro=6.022e23
+print(avogadro)
+print(type(avogadro))
+
+tiny=1.5e-10
+print(tiny)
+print(type(tiny))
+
+
+
+
+
+
