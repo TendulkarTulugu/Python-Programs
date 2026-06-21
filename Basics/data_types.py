@@ -8,6 +8,12 @@ big=1_00_00_000    # _ are used for readability purpose.
 print(big)
 print(type(big))
 
+# for negative values
+
+neg=-17
+print(neg)
+print(type(neg))      # since it's a negative value still it's an integer
+
 
 
 
