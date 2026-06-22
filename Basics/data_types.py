@@ -56,6 +56,33 @@ print(tiny)
 print(type(tiny))
 
 
+#==========================================================================================================================================
+
+# Boolean
+
+# Boolean
+
+a=True
+b=False
+print(type(a))
+print(a)
+print(type(b))
+print(b)
+
+print(a+5)
+
+print(bool(0))
+
+print(bool(""))
+print(bool(None))
+print(bool(False))
+print(bool([]))
+print(bool({}))
+print(bool(()))
+print(bool('Hello'))
+print(bool(1))
+print(bool(-1))
+
 
 
 
@@ -131,9 +158,7 @@ print("Py" * 3)  # Outputs: PyPyPy
 Concatenation (+): When you "add" two strings together, it glues them end-to-end into a single string.
 
 Python
-print("Py" + "thon")  # Outputs: Python
-
-"""
+print("Py" + "thon")  # Outputs: Python """
 
 
 
