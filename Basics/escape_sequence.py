@@ -16,3 +16,13 @@ print(singles)
 quot="she said\"HI\""
 print(quot)
 
+
+
+# The 'r' tells Python to ignore the backslashes inside
+path = r"C:\Users\Alice\Documents" 
+print(path)
+
+
+# Highly useful for regex patterns where backslashes are common
+x = r"\d+\.\d+"
+print(x)
