@@ -22,3 +22,5 @@ match day:
         print('Sun')
 
 
+# the match expression is evaluated once.
+# the value of expression is compared with value of each case.
