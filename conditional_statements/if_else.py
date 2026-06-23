@@ -17,7 +17,7 @@
 # Let's see 'IF' here
 
 
-age=2
+age=20
 
 if age>=18:
     print('major')
@@ -27,3 +27,9 @@ if age>=18:
 
 #If-Else
 
+n=100
+
+if n==10:
+    print('n is 10')
+else:
+    print('n is not 10')
