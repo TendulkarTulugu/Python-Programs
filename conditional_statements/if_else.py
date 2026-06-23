@@ -14,3 +14,10 @@
 # let's see each one seperately
 
 
+# Let's see 'IF' here
+
+
+age=20
+
+if age>=18:
+    print('major')
