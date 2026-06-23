@@ -17,7 +17,13 @@
 # Let's see 'IF' here
 
 
-age=20
+age=2
 
 if age>=18:
     print('major')
+
+# here the condition is True so it prints Major if the age is lesser then the code executes but returns nothing.
+
+
+#If-Else
+
