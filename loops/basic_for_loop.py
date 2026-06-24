@@ -41,3 +41,8 @@ for i in range(1,6):
     print(i,end=" ")
 print()
 
+# here i want to print in reverse order like 10-1
+
+for i in range(10,0,-1):
+    print(i)
+
