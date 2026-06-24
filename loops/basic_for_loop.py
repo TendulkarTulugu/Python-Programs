@@ -31,7 +31,13 @@ for char in "python":
 name="Tendulkar"
 for n in name:
     print(n,end=" ")
+print()
 
 # here each character is iterating and end=" " is used to seperate each character by using space betweeen each character.
 
-    
+# here i want to iterate numbers from 1-5 in single line. so similarly we'll use end=" " 
+
+for i in range(1,6):
+    print(i,end=" ")
+print()
+
