@@ -13,3 +13,11 @@ for name, score in zip(names, scores):
  print(f"{name}: {score}/100")
  
  # here it give like 90/100 format.
+ 
+ 
+ 
+ for a, b in zip([1,2,3], [10,20]):
+     print(a, b) 
+
+
+# only 2 pairs: (1,10) and (2,20)
