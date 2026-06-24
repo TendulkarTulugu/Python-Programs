@@ -12,4 +12,4 @@ scores = [92, 85, 78]
 for name, score in zip(names, scores):
  print(f"{name}: {score}/100")
  
- 
+ # here it give like 90/100 format.
