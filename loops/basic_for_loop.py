@@ -21,3 +21,17 @@ for d in data:
 
 # iterate over string
 
+for char in "python":
+    print(char)
+
+# it prints each letter in new line
+
+# if we want to print in single line but iterate through each character
+
+name="Tendulkar"
+for n in name:
+    print(n,end=" ")
+
+# here each character is iterating and end=" " is used to seperate each character by using space betweeen each character.
+
+    
