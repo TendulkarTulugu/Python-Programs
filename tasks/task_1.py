@@ -118,3 +118,20 @@ for i in range(69,64,-1):
         print(chr(j),end='')
     print()
 print('---------------')
+
+# 8  continous number pattern
+
+# 1
+# 23
+# 456
+# 78910
+
+n=1
+for i in range(1,5):
+    for j in range(i):
+        print(n,end='')
+        n+=1
+    print()
+print('--------------------')
+
+
