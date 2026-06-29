@@ -184,8 +184,20 @@ for i in range(1,6):
         print(n,end='')
         n+=1
     print()
-
+print('--------------------')
 
 
 # one last prblm
+
+# 5
+# 45
+# 345
+# 2345
+# 12345
+
+for i in range(1,6):
+    for j in range(6-i,6):
+        print(j,end='')
+    print()
+    
 
