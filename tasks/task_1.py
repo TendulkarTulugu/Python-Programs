@@ -149,3 +149,43 @@ for i in range(1,6):
         print(chr(a),end='')
         a+=1
     print()
+
+
+
+
+# ⭐ Programming Tip
+
+# When solving patterns, ask yourself:
+
+# What does this variable represent?
+
+# i → Row number
+# j → Column/repetition count
+# a → Current alphabet character
+
+# Don't use one variable for two different jobs.
+
+
+
+
+
+
+# Mini Challenge
+
+# 1
+# 23
+# 456
+# 78910
+# 1112131415
+
+n=1
+for i in range(1,6):
+    for j in range(i):
+        print(n,end='')
+        n+=1
+    print()
+
+
+
+# one last prblm
+
