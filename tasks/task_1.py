@@ -57,3 +57,34 @@ for z in range(2,6):
 print('---------------------------------')
 
 
+
+# 4 Number pattern
+
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end='')
+    print()    
+
+print('--------------------')
+
+# 5 Reverse number patterns
+
+# 1
+# 21
+# 321
+# 4321
+# 54321
+
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(i,end='')
+    print()
+        
