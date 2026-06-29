@@ -89,3 +89,32 @@ for i in range(1,6):
     print()
 
 print('-----------------')
+
+#6 Alphabet patterns
+
+# A
+# AB
+# ABC
+# ABCD
+# ABCDE
+
+for i in range(65,70):
+    for j in range(65,i+1):
+        print(chr(j),end='')
+    print()
+print('----------------------------')
+
+
+# 7 Reverse alphabet
+
+# E
+# ED
+# EDC
+# EDCB
+# EDCBA
+
+for i in range(69,64,-1):
+    for j in range(69,i-1,-1):
+        print(chr(j),end='')
+    print()
+print('---------------')
