@@ -11,3 +11,13 @@ Don't use max()
 
 '''
 
+def lar(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+
+res=lar(10,20)
+print(res)
+res=lar(50,12)
+print(res)
