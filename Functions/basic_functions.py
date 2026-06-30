@@ -92,3 +92,40 @@ def welcome():
 welcome()
 welcome()
 welcome()
+
+
+
+# Challenge 2 (One Step Ahead)
+
+# Write a function named square() that prints:
+
+
+
+# *****
+# *****
+# *****
+# *****
+# *****
+
+
+
+
+# Requirements:
+
+# Use one function.
+# Use a loop inside the function.
+# Call the function once.
+
+
+
+def square():
+    print('*****\n*****\n*****\n*****\n*****')
+square()
+
+print('------------------')
+# by using loops
+
+def square():
+    for i in range(1,6):
+        print('*'*5)
+square()
