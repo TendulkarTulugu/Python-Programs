@@ -47,3 +47,15 @@ def small(a,b):
 
 result=small(5,10)
 print(result)
+
+# 3 square of a number
+
+def square(n):
+    return n*n
+
+result=square(9)
+print(result)
+
+
+
+
