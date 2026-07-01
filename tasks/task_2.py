@@ -58,4 +58,22 @@ print(result)
 
 
 
+# 4 Check the palindrome
+def is_palindrome(n):
+    num=0
+    o=n
+    while n>0:
+        dig=n%10
+        num=num*10+dig
+        n=n//10
+    if num==o:
+        return 'Palindrom'
+    else:
+        return 'Not a Palindrome'
+result=is_palindrome(323)
+print(result)
+
+
+            
+        
 
