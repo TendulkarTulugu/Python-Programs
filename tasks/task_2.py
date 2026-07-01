@@ -73,7 +73,19 @@ def is_palindrome(n):
 result=is_palindrome(323)
 print(result)
 
+#5 Prime number
 
-            
+def is_prime(n):
+    fact=0
+    for i in range(1,n+1):
+        if n%i==0:
+            fact+=1
+    if fact==2:
+        return 'Prime'
+    else:
+        return 'Not Prime'
+    # return fact
+result=is_prime(11)
+print(result)
         
 
