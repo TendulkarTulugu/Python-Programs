@@ -35,3 +35,15 @@ def sum(a,b):
 
 result=sum(10,20)
 print(result)
+
+
+#2 
+
+def small(a,b):
+    if a<b:
+        return a
+    else:
+        return b
+
+result=small(5,10)
+print(result)
