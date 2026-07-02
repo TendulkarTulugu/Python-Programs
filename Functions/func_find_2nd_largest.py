@@ -174,3 +174,20 @@ Answer:
 
 
 
+def second_largest(nums):
+    if len(nums)==0:
+        return None
+    largest=nums[0]
+    second=float('-inf')
+    for n in nums:
+        if n>largest:
+            second=largest
+            largest=n
+        elif n>second and n!=largest:
+            second=n
+    return largest, second
+
+
+numbers = [10, 45, 7, 92, 31,105,110]
+
+print(second_largest(numbers))
