@@ -174,19 +174,3 @@ Answer:
 
 
 
-def second_largest(nums):
-    largest = nums[0]
-    second = float('-inf')
-
-    for num in nums:
-        if num > largest:
-            second = largest
-            largest = num
-        elif num > second and num != largest:
-            second = num
-
-    return second
-
-
-numbers = [93,10, 45, 7, 92, 31]
-print(second_largest(numbers))
