@@ -49,4 +49,4 @@ def count_words(text):
             spaces+=1
     words=spaces+1
     return words
-print(count_words(""))
+print(count_words("Hello "))
