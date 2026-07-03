@@ -39,4 +39,3 @@ def search(nums, target):
 numbers = [10, 45, 7, 92, 31]
 
 print(search(numbers, 92))
-print(search(numbers,100))
