@@ -133,3 +133,77 @@ count_3
 
 you store everything in one variable.
 '''
+
+
+
+
+# tasks
+'''
+🎯 Before Our Next Session
+
+Just one small practice (10–15 minutes):
+
+Try writing these without looking at old code:
+
+1. find_largest(nums)
+2. find_smallest(nums)
+3. reverse_list(nums)
+4. search(nums, target)
+5. count_vowels(text)
+
+If you can write those from memory, you've truly understood the concepts.
+
+'''
+
+#1 
+
+def largest(nums):
+    large=nums[0]
+    for num in nums:
+        if num>large:
+            large=num
+    return large
+numbers = [10, 45, 7, 92, 31]
+print(largest(numbers))
+
+
+#2
+def smallest(nums):
+    small=nums[0]
+    for num in nums:
+        if num<small:
+            small=num
+    return small
+numbers = [10, 45, 7, 92, 31]
+print(smallest(numbers))
+
+#3 reverse a list
+def reverse_list(nums):
+    rev=[]
+    for num in nums:
+        rev.insert(0,num)
+    return rev
+numbers = [10, 45, 7, 92, 31]
+print(reverse_list(numbers))
+
+#4 search
+def search(nums,target):
+    for num in nums:
+        if num==target:
+            return 'Found'
+    return 'Not Found'
+
+numbers = [10, 45, 7, 92, 31]
+print(search(numbers,92))
+
+#5 count vowels
+def count_vowels(text):
+    text=text.lower()
+    vowels='aeiou'
+    count=0
+    for ch in text:
+        if ch in vowels:
+            count+=1
+    return count
+result=count_vowels('Education')
+print(result)
