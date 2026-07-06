@@ -50,13 +50,29 @@ Try to solve it without searching online. If you get stuck, I'll guide you one s
 '''
 
 
-def search(nums,target):
+# def search(nums,target):
     
-    for num in nums:
-        # index=nums[num]
-        if target==num:
-            return f'Found at {nums.index(num)}'
+#     for num in nums:
+#         # index=nums[num]
+#         if target==num:
+#             return f'Found at {nums.index(num)}'
+#     return 'Not Found'
+# numbers = [10, 45, 7, 92, 31]
+
+# print(search(numbers, 92))
+
+
+# the above will give the correct output but we used the built in function '.index()'
+
+# so let's try without using the built-in functions
+
+def search(nums,target):
+    size=len(nums)
+    for i in range(size):
+        if target==nums[i]:
+            return f'Found at {i}'   
     return 'Not Found'
+
 numbers = [10, 45, 7, 92, 31]
 
 print(search(numbers, 92))
