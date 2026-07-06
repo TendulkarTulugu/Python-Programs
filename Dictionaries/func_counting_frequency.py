@@ -1,3 +1,4 @@
+# 1
 '''
 🎯 Today's Next Topic: Frequency of Elements
 
