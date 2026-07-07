@@ -86,3 +86,97 @@ for values in students:
 
 for key,value in students.items():
     print(key,':',value)
+
+'''
+student = {
+    "name": "Tendul",
+    "age": 23
+}
+
+First line
+print("name" in student)
+
+Python asks:
+
+"Is "name" a key in this dictionary?"
+
+Keys are:
+
+name
+age
+
+So:
+
+True
+
+Second line
+
+print("Tendul" in student)
+
+Python asks:
+
+"Is "Tendul" a key?"
+
+Notice carefully...
+
+"Tendul" is a value, not a key.
+
+Keys are still:
+
+name
+age
+
+So:
+
+False
+
+⭐ Very Important Rule
+
+When you write:
+
+if something in dictionary:
+
+Python checks only the keys, not the values.
+
+If you want to check the values
+
+Use:
+
+"Tendul" in student.values()
+
+Example:
+
+print("Tendul" in student.values())
+
+Output:
+
+True
+
+Because now Python is checking:
+
+Tendul
+23
+
+instead of:
+
+name
+age
+
+🧠 Memory Trick
+
+Think of a dictionary as a cupboard.
+
+name  ─────► Tendul
+age   ─────► 23
+
+When you ask:
+
+"name" in student
+
+Python looks only at the labels on the drawers (keys).
+
+If you want to know whether "Tendul" exists, you have to open the drawers:
+
+"Tendul" in student.values()
+
+'''
