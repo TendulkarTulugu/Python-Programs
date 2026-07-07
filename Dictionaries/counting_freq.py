@@ -172,3 +172,91 @@ def count_freq(nums):
 numbers = [10, 20, 10, 50, 30, 20, 10]
 
 print(count_freq(numbers))
+
+'''
+this runs perfectly.
+
+Today your program works for:
+
+[10, 20, 10, 50, 30, 20, 10]
+
+or
+
+[100, 500, 700, 100, 999]
+
+or even
+
+[9999, -5, 0, 9999]
+
+without changing a single line.
+
+That's the power of dictionaries.
+
+
+even this logic also works
+
+if i not in frequency:
+    frequency[i] = 1
+else:
+    frequency[i] += 1
+
+
+'''
+
+
+# another challenge
+
+'''
+🎯 Challenge (No Hints)
+
+Can you modify your function so that instead of returning:
+
+{10: 3, 20: 2, 50: 1, 30: 1}
+
+it prints:
+
+10 -> 3
+20 -> 2
+50 -> 1
+30 -> 1
+
+Hint: You'll need to loop through the dictionary.
+'''
+def count_freq(nums):
+    frequency={}
+    for i in nums:
+        if i not in frequency:
+            frequency[i]=1
+        elif i in frequency:
+            frequency[i]+=1
+    for key in frequency:
+        print(key,'->',frequency[key])
+
+numbers = [10, 20, 10, 50, 30, 20, 10]
+
+print(count_freq(numbers))
+
+'''
+here the print statement at last calls everything in the function and printing inside the function
+
+and at last after calling we are printing so it returns None
+
+to overcome this simply calling the function can validate and remove the None at the ending
+
+'''
+
+def count_freq(nums):
+    frequency={}
+    for i in nums:
+        if i not in frequency:
+            frequency[i]=1
+        elif i in frequency:
+            frequency[i]+=1
+    for key in frequency:
+        print(key,'->',frequency[key])
+
+numbers = [10, 20, 10, 50, 30, 20, 10]
+
+count_freq(numbers)
+
+# now it returns without None
