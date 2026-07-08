@@ -125,13 +125,14 @@ student = {
 }
 
 def search_key(dictionary, key):
-    for keys in dictionary:
-        if key in dictionary:
-            return dictionary[key]
-        elif key not in dictionary:
-            return 'key not found'
+    if key in dictionary:
+        return dictionary[key]
+    else:
+        return 'key not found'
     return
 
 
 print(search_key(student, "age"))
 print(search_key(student, "city"))
+
+
