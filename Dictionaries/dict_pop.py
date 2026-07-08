@@ -57,3 +57,46 @@ students={
 print(students)
 students.pop('cgpa')
 print(students)
+
+
+
+'''
+⭐ Here's the Interesting Part
+
+Most beginners think pop() only deletes.
+
+But it actually returns the deleted value.
+
+Example:
+'''
+
+students = {
+    'name': 'Tendulkar',
+    'age': 22,
+    'branch': 'AI & ML',
+    'cgpa': 8.04
+}
+
+x = students.pop('cgpa')
+
+print(x)
+print(students)
+
+'''
+
+Output:
+
+8.04
+{'name': 'Tendulkar', 'age': 22, 'branch': 'AI & ML'}
+
+So:
+
+x = students.pop('cgpa')
+
+means:
+
+Remove "cgpa" from the dictionary.
+Store its value in x.
+
+This is why pop() is useful.
+'''
