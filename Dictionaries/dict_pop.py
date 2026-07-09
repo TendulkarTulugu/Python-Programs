@@ -1,3 +1,5 @@
+#9
+
 '''
 In Python, the dictionary.pop(key, default) method removes a specified key from a dictionary 
 and returns its associated value. It modifies the original dictionary in place.
