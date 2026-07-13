@@ -51,3 +51,5 @@ name, *details = student # its the additional feature in python.
 
 print(name)
 print(details)
+
+
