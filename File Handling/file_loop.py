@@ -137,3 +137,44 @@ for line in file:
 
 file.close()
 
+
+
+'''
+🎯 Interview Question
+
+This is a question you might actually be asked.
+
+Which is better for a very large file (say 5 GB)?
+
+A)
+
+content = file.read()
+
+or
+
+B)
+
+for line in file:
+    print(line)
+Answer:
+
+✅ B
+
+Why?
+
+Because:
+
+read() loads the entire file into memory.
+A 5 GB file may consume a lot of RAM or even fail on a machine with limited memory.
+for line in file reads one line at a time, so memory usage stays low.
+
+That's why you'll often see:
+
+with open("large_file.txt") as file:
+    for line in file:
+        # Process line
+        pass
+
+in real-world Python programs.
+
+'''
