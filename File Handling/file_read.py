@@ -5,6 +5,7 @@
 file=open(r"File Handling\sample.txt")
 content=file.read()
 print(content)
+print(type(content))
 file.close()
 
 print('---readline()---')
@@ -13,7 +14,8 @@ print('---readline()---')
 #  It reads only the first line.
 
 file = open(r"File Handling\sample.txt")
-print(file.readline())
+content=file.readline()
+print(type(content))
 file.close()
 
 print('--------')
@@ -40,7 +42,7 @@ print('---readlines()---')
 file = open(r"File Handling\sample.txt")
 
 lines = file.readlines()
-
+print(type(lines))
 print(lines)
 
 file.close()

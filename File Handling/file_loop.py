@@ -97,3 +97,43 @@ for line in file:
     count+=1
 
 file.close()
+
+
+# to print last line we can use 2 methods.
+
+
+#1st
+
+file=open(r"File Handling\sample.txt")
+count=1
+for line in file:
+    if count==3:
+        print(line.strip())
+    count+=1
+
+file.close()
+
+#2nd method
+
+file=open(r"File Handling\sample.txt")
+last_line=''
+for line in file:
+    last_line=line
+
+print(last_line)
+file.close()
+
+
+
+# printing line numbers
+
+file = open(r"File Handling\sample.txt")
+
+count = 1
+
+for line in file:
+    print("Line", count, ":", line.strip())
+    count += 1
+
+file.close()
+
