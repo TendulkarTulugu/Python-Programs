@@ -1,5 +1,8 @@
 #1
 
+# file is a place where data is stored permanently.
+
+# Unlike variables, files keep their data even after your program closes.
 
 '''
 This is where Python starts interacting with the real world.
