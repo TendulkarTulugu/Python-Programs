@@ -1,0 +1,3 @@
+Name: Tendul
+Age: 22
+Degree: AI & DS
