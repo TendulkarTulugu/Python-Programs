@@ -44,3 +44,18 @@ print(content)
 file.close()
 
 
+'''
+Task
+
+Write a program that:
+
+Opens student.txt
+Reads the entire content into a variable called content
+Prints the number of characters in the file
+Closes the file
+'''
+
+file=open('File Handling\Writing\student.txt')
+content=file.read()
+print(len(content))
+file.close()
