@@ -93,3 +93,42 @@ for line in file:
     count+=1
 file.close()
 
+'''
+Now let's make it a little more interesting.
+
+Task
+
+Print only the last line of student.txt.
+
+Rules
+❌ Don't use readlines()
+❌ Don't use indexing ([-1])
+✅ Use only a for loop.
+✅ Use only one extra variable.
+Example
+
+If the file contains:
+
+Name: Tendul
+Age: 22
+Degree: AI & DS
+
+Output:
+
+Degree: AI & DS
+'''
+
+file=open('File Handling\Writing\student.txt')
+
+count=1
+l_line=''
+for line in file:
+    l_line=line
+
+print(l_line)
+
+#-- better to use print(l_line.strip())
+
+file.close()
+
+
