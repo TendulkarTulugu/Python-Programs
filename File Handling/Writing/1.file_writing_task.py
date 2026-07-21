@@ -59,3 +59,37 @@ file=open('File Handling\Writing\student.txt')
 content=file.read()
 print(len(content))
 file.close()
+
+
+'''
+Task
+
+Print the file line by line with line numbers.
+
+If student.txt contains:
+
+Name: Tendul
+Age: 22
+Degree: AI & DS
+
+The output should be:
+
+1. Name: Tendul
+2. Age: 22
+3. Degree: AI & DS
+
+Rules
+✅ Use a for loop.
+✅ Don't use readlines(). (This is intentional.)
+✅ Don't use indexing.
+✅ Use a counter variable.
+'''
+
+file=open('File Handling\Writing\student.txt')
+
+count=1
+for line in file:
+    print(count,line.strip())
+    count+=1
+file.close()
+
