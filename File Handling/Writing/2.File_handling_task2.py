@@ -92,3 +92,6 @@ for line in file:
     print(count,'.',line.strip(),sep='')
     count+=1
 file.close()
+
+
+
