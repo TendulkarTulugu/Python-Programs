@@ -127,7 +127,7 @@ file.close()
 
 # printing line numbers
 
-file = open(r"File Handling\sample.txt")
+file = open(r"File Handling\Reading\sample.txt")
 
 count = 1
 
