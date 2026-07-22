@@ -99,3 +99,71 @@ prints:
 
 because the cursor has moved 2 characters.
 '''
+
+'''
+Now here's the interesting part...
+
+You already know that append mode ("a") places the cursor at the end of the file.
+
+So if the file contains:
+
+Rahul
+Priya
+
+and you do:
+
+file = open("sample.txt", "a")
+print(file.tell())
+
+the output will not be 0.
+
+It will be the position at the end of the file.
+'''
+
+
+file=open('File Handling\Appending\sample.txt','a')
+print(file.tell())
+
+'''
+🧠 Interview Tip
+
+A common misconception is:
+
+"tell() tells the file size."
+
+Not exactly.
+
+The correct definition is:
+
+tell() returns the current position of the file cursor (in bytes for text files with simple encodings).
+
+Sometimes, when the cursor is at the end of a simple text file, that position happens to equal the file's size. 
+That's why people confuse the two.
+'''
+
+# file = open("sample.txt", "a")
+file=open('File Handling\Appending\sample.txt','a')
+
+print(file.tell())
+
+file.write(" AI")
+
+print(file.tell())
+
+file.close()
+
+
+# file = open("sample.txt", "r")
+
+file=open('File Handling\Appending\sample.txt','r')
+print(file.tell()) #-- starts at 0 cursor
+
+file.read(2) #-- moves to place 2
+
+print(file.tell())
+
+file.read(3) #-- moves from 2 to next 3 means 2+3=5 now the cursor is at 5
+
+print(file.tell())
+
+file.close()
