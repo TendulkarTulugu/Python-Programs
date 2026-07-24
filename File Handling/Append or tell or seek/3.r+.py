@@ -139,3 +139,14 @@ immediately writing without repositioning the file pointer is not something you 
 
 '''
 
+'''
+Calling:
+
+file.seek(file.tell())
+
+doesn't move the cursor to a different place—it synchronizes 
+Python's internal buffer with the actual file position. After that, writing behaves as expected.
+
+This is a subtle detail, and many beginners (and even some experienced programmers) 
+don't encounter it until they experiment.
+'''
