@@ -337,6 +337,35 @@ while True:
         else:
             print("Student Not Found")
 
+    elif choice == 5:
+        print("\n----- Delete Student -----")
+
+        search_name = input("Enter Student Name to Delete: ").strip()
+
+        updated_records = []
+        found = False
+
+        with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "r") as file:
+            lines = file.readlines()
+
+        for line in lines:
+            data = line.strip().split(",")
+
+            if search_name.lower() == data[0].lower():
+                found = True
+                continue
+
+            updated_records.append(line)
+
+        if found:
+            with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "w") as file:
+                file.writelines(updated_records)
+
+            print("Student Deleted Successfully!")
+
+        else:
+            print("Student Not Found")
+
     elif choice == 6:
         print("Thank You! Exiting Program...")
         break
