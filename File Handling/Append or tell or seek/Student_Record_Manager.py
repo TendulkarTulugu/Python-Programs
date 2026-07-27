@@ -252,42 +252,30 @@ while True:
     print("4. Update Student")
     print("5. Delete Student")
     print("6. Exit")
-
     choice = int(input("Enter your choice: "))
-
     if choice == 1:
         print("\n----- Add Student -----")
         name = input("Enter Name: ").strip()
         age = input("Enter Age: ").strip()
         course = input("Enter Course: ").strip()
-
         with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "a") as file:
             file.write(f"{name},{age},{course}\n")
-
         print("Student Added Successfully!")
-
     elif choice == 2:
         print("\n----- Student Records -----")
-
         with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "r") as file:
             data = file.read()
-
             if data:
                 print(data)
             else:
                 print("No Student Records Found.")
-
     elif choice == 3:
         print("\n----- Search Student -----")
-
         search_key = input("Enter Student Name: ").strip()
-
         found = False
-
         with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "r") as file:
             for line in file:
                 data = line.strip().split(",")
-
                 if search_key.lower() == data[0].lower():
                     print("\nStudent Found")
                     print(f"Name   : {data[0]}")
@@ -295,80 +283,53 @@ while True:
                     print(f"Course : {data[2]}")
                     found = True
                     break
-
         if not found:
             print("Student Not Found")
-
     elif choice == 4:
         print("\n----- Update Student -----")
-
         search_name = input("Enter Student Name to Update: ").strip()
-
         updated_records = []
         found = False
-
         with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "r") as file:
             lines = file.readlines()
-
         for line in lines:
             data = line.strip().split(",")
-
             if search_name.lower() == data[0].lower():
-
                 print("Student Found")
-
                 new_age = input("Enter New Age: ").strip()
                 new_course = input("Enter New Course: ").strip()
-
                 updated_record = f"{data[0]},{new_age},{new_course}\n"
                 updated_records.append(updated_record)
-
                 found = True
-
             else:
                 updated_records.append(line)
-
         if found:
             with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "w") as file:
                 file.writelines(updated_records)
-
             print("Student Updated Successfully!")
-
         else:
             print("Student Not Found")
-
     elif choice == 5:
         print("\n----- Delete Student -----")
-
         search_name = input("Enter Student Name to Delete: ").strip()
-
         updated_records = []
         found = False
-
         with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "r") as file:
             lines = file.readlines()
-
         for line in lines:
             data = line.strip().split(",")
-
             if search_name.lower() == data[0].lower():
                 found = True
                 continue
-
             updated_records.append(line)
-
         if found:
             with open("File Handling\\Append or tell or seek\\Student_Record_Manager.txt", "w") as file:
                 file.writelines(updated_records)
-
             print("Student Deleted Successfully!")
-
         else:
             print("Student Not Found")
-
     elif choice == 6:
         print("Thank You! Exiting Program...")
         break
-
     else:
         print("Invalid Choice! Please Try Again.")
