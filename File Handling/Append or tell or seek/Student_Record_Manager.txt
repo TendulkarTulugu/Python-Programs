@@ -1,1 +1,3 @@
-tendul,22,ds
+Rahul,21,DS
+Priya,22,AIML
+Amit,20,CSE
