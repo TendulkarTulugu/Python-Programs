@@ -163,3 +163,41 @@ Exceptions are exactly that.
 Your program needs a way to react instead of crashing.
 '''
 
+'''
+Without Exception Handling
+
+Start Program
+      │
+      ▼
+Read Input
+      │
+      ▼
+Unexpected Error
+      │
+      ▼
+💥 Program Stops
+'''
+
+
+
+'''
+With Exception Handling
+
+Start Program
+      │
+      ▼
+Read Input
+      │
+      ▼
+Unexpected Error
+      │
+      ▼
+Handle the Error
+      │
+      ▼
+Continue Program
+
+That's the entire purpose of exception handling.
+'''
+
+
