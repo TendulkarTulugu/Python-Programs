@@ -67,6 +67,29 @@ Wrong.
 It only says
 
 "Watch this code carefully."
+
+
+Important Rule 2
+
+Only the code inside the try block is protected.
+'''
+
+
+'''
+The moment an exception occurs inside a try block, Python immediately stops executing the remaining statements in that try block.
+'''
+
+
+'''
+🧠 Golden Rules So Far
+
+By now, you should remember these rules:
+
+✅ try marks code that might raise an exception.
+✅ If no exception occurs, the except block is skipped.
+✅ If an exception occurs, Python immediately stops the rest of the try block.
+✅ Python jumps to the matching except block.
+✅ After except finishes, execution continues with the code after the try-except block.
 '''
 
 
