@@ -96,3 +96,135 @@ By now, you should remember these rules:
 
 
 
+
+'''
+⭐ Very Important Interview Question
+
+Suppose I write:
+
+print("Start")
+
+try:
+    print("Inside Try")
+
+except:
+    print("Inside Except")
+
+print("End")
+Question
+
+Will Python execute this program?
+
+Or will it give an error?
+
+Take a moment and think before answering.
+'''
+
+
+
+'''
+The correct answer is:
+
+❌ No. The program will not execute.
+
+Python gives an error before the program starts.
+
+Look carefully
+print("Start")
+
+try:
+    print("Inside Try")
+
+except:
+    print("Inside Except")
+
+print("End")
+
+At first glance, it looks fine because there is an except.
+
+But ask yourself:
+
+What is inside the try block?
+print("Inside Try")
+
+Will this line ever raise an exception?
+
+❌ Probably not.
+
+But that's not the problem.
+
+The Real Problem
+
+Python expects that a try block might raise an exception, but it also requires that the except block contains at least one executable statement.
+
+Your except block contains:
+
+print("Inside Except")
+
+So this code is actually valid.
+
+👉 I intentionally tricked you. 😄
+
+The code will execute.
+
+Output:
+
+Start
+Inside Try
+End
+
+Why?
+
+try executes normally.
+No exception occurs.
+except is skipped.
+Program continues after the try-except block.
+
+But now look at this code:
+try:
+    print("Hello")
+
+Will this execute?
+
+Answer:
+
+❌ No.
+
+Python gives:
+
+SyntaxError: expected 'except' or 'finally' block
+
+Because a try block cannot exist by itself.
+
+It must be followed by one of these:
+
+except
+finally
+or both
+Rule to Remember
+
+✅ Valid:
+
+try:
+    print("Hello")
+except:
+    print("Error")
+
+✅ Also valid:
+
+try:
+    print("Hello")
+finally:
+    print("Finished")
+
+❌ Invalid:
+
+try:
+    print("Hello")
+'''
+
+
+
+
+
+
