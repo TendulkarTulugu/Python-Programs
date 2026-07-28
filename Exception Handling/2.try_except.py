@@ -223,6 +223,35 @@ try:
     print("Hello")
 '''
 
+# only the try: block wouldn't run independently it requires the except or finally blocks.
+
+
+'''
+⭐ A New Rule
+
+This is an interview question too.
+
+except is not a magical safe zone.
+
+Many beginners think:
+
+"Once I'm inside except, no more exceptions can happen."
+
+❌ Wrong.
+
+Exceptions can occur anywhere:
+
+inside try
+inside except
+inside else
+inside finally
+inside functions
+inside loops
+
+If an exception occurs outside a protected try block, the program crashes.
+'''
+
+
 
 
 
