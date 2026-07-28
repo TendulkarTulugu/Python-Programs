@@ -253,6 +253,23 @@ If an exception occurs outside a protected try block, the program crashes.
 
 
 
+try:
+    print("Outer Try") #-- prints
+
+    try:
+        print(10 / 0) # raises error so moves to nearest except block.
+
+    except:
+        print("Inner Except") #-- prints 
+
+    print("After Inner") #-- exception resolved so it prints the line
+
+except:
+    print("Outer Except") #-- skips the line bcz the exceptions are handled so it skips this exception block
+
+print("Program End") #-- prints the line at last.
+
+
 
 
 
