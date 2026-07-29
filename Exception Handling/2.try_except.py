@@ -270,6 +270,36 @@ except:
 print("Program End") #-- prints the line at last.
 
 
+'''
+⭐ One Very Important Rule
+
+An exception is first offered to the nearest except block.
+
+If that except handles it, Python continues normally.
+
+If it doesn't handle it, the exception moves outward to the next enclosing try.
+'''
+
+
+
+try:
+    print("Outer Start") #-- prints the line
+
+    try:
+        print(10 / 0) #-- raises the error
+
+    except:
+        print("Inner Except") # exception occured so the block executes and print the line
+        print(10 / 0) # raises the exception
+
+    print("Outer Continue") # as exception raised the line get skipped.
+
+except:
+    print("Outer Except") #-- as exception raised the block executes and prints the line
+
+print("Program End") # prints the line at last as the exceptions handled
+
+
 
 
 
