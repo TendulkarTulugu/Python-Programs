@@ -201,15 +201,5 @@ That's the entire purpose of exception handling.
 '''
 
 
-print("Start")
 
-try:
-    print("Inside Try")
 
-except:
-    print("Inside Except")
-
-print("End")
-
-try:
-    print('Hello')
