@@ -275,4 +275,26 @@ except ValueError as ex:
 
 All of these are valid.
 '''
+print('--------') # seperating the blocks
+
+try:
+    raise ValueError("First Error")
+
+except ValueError as e:
+    print(type(e))
+    print(e)
+
+
+
+
+# try:
+#     raise ValueError("Error 1")
+
+# except ValueError as e:
+#     print(e)
+#     raise
+
+# print("End")
+
+# 💡 This is called re-raising an exception, and it's another favorite interview question.
 
