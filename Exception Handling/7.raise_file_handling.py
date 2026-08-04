@@ -298,3 +298,28 @@ except ValueError as e:
 
 # 💡 This is called re-raising an exception, and it's another favorite interview question.
 
+'''
+⭐ Golden Rule
+
+There are two forms of raise.
+
+1. Raise a new exception
+
+raise ValueError("Invalid Input")
+
+Creates a brand-new exception.
+
+2. Re-raise the current exception
+
+except ValueError:
+    raise
+
+Raises the same exception again.
+
+This is useful when you want to:
+
+Log the error
+Perform cleanup
+Let another part of the program handle it
+
+'''
