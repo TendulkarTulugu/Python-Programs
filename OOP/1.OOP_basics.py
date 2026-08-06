@@ -702,3 +702,41 @@ Course → Python
 
 That's exactly what we'll learn next using the constructor (__init__), which is one of the most important parts of OOP.
 '''
+
+
+class Student:
+    pass
+
+rahul = Student()
+priya = Student()
+amit = Student()
+
+print(rahul)
+print(priya)
+print(amit)
+
+
+'''
+Output will look something like:
+
+<__main__.Student object at 0x1A2B3C>
+<__main__.Student object at 0x4D5E6F>
+<__main__.Student object at 0x7G8H9I>
+
+Notice the memory addresses are different.
+
+
+Why?
+
+Because:
+
+Rahul is one student.
+Priya is another student.
+Amit is another student.
+
+If Python stored all of them in the same memory location, 
+changing Rahul's data would also change Priya's data—which would be wrong.
+'''
+
+
+
