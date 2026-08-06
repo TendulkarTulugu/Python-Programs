@@ -534,3 +534,171 @@ prints the class, not an object of that class.
 '''
 
 
+
+
+'''
+Right now our program looks like this:
+
+Student Class
+├── Name
+├── Age
+└── Course
+
+That's it.
+
+No Rahul.
+
+No Priya.
+
+No Amit.
+
+Just the template.
+
+Now comes the exciting part...
+
+How do we create Rahul?
+
+Python uses this syntax:
+
+rahul = Student()
+
+Don't worry about the syntax yet.
+
+Just think about the English meaning.
+
+Student()
+
+means:
+
+"Create one student using the Student class."
+
+Then:
+
+rahul = Student()
+
+means:
+
+"Create one Student object and store it in the variable rahul."
+
+Real Life Analogy
+
+Imagine a cookie cutter.
+
+🍪 Cookie cutter:
+
+⭐ Star Shape
+
+That's the class.
+
+Now you press it into the dough.
+
+You get:
+
+🍪 Cookie 1
+
+🍪 Cookie 2
+
+🍪 Cookie 3
+
+The cutter never changes.
+
+It keeps creating new cookies.
+
+Similarly:
+
+Student()
+
+creates:
+
+Rahul
+
+Again:
+
+Student()
+
+creates:
+
+Priya
+
+Again:
+
+Student()
+
+creates:
+
+Amit
+'''
+
+class Student:
+    pass
+
+rahul = Student()       #creating the object.
+
+print(rahul)    
+
+# It prints something like:
+# <__main__.Student object at 0x000001F3A8C4BDF0>
+
+
+'''
+Don't panic. 😄
+
+You do NOT need to memorize this.
+
+Let's understand it.
+
+Break it down
+<__main__.Student object at 0x000001F3A8C4BDF0>
+
+means:
+
+Student → This object belongs to the Student class.
+object → It is an object.
+0x000001F3... → The memory address where Python stored this object.
+
+Think of it like this:
+
+Rahul
+        │
+        ▼
+Stored in Memory
+Address → 0x000001F3...
+
+Python is basically saying:
+
+"Here's a Student object. It's stored at this memory location."
+
+⭐ Very Important
+
+Notice something.
+
+We wrote:
+
+rahul = Student()
+
+But Python doesn't know that this object represents Rahul.
+
+rahul is just a variable name.
+
+At this point, the object has:
+
+❌ No name
+❌ No age
+❌ No course
+
+It is just an empty Student object.
+
+🎯 This naturally leads to the next question.
+
+How do we put information inside the object?
+
+Like this:
+
+Rahul Object
+
+Name   → Rahul
+Age    → 20
+Course → Python
+
+That's exactly what we'll learn next using the constructor (__init__), which is one of the most important parts of OOP.
+'''
