@@ -439,3 +439,98 @@ These are Objects.
 
 
 
+
+'''
+⭐ This is the first definition I'll let you memorize.
+
+Most definitions I don't want you to memorize.
+
+But this one is important because you now understand it.
+
+Class
+
+A Class is a blueprint or template that defines the properties and behavior of objects.
+
+Object
+
+An Object is a real instance created from a class.
+
+Notice I didn't give you these definitions first.
+
+We derived them from the student example.
+
+That's why they'll stick.
+'''
+
+
+
+# 🚀 Now let's write your FIRST class.
+
+class Student:  # student is the name if the class.
+    pass
+
+# this contains only 1 class and no objects in this.
+print(Student)  # while printing we think it prints nothing as it only contains pass statement
+
+
+'''
+But the correct output is:
+
+<class '__main__.Student'>
+
+or in some environments:
+
+<class 'Student'>
+
+
+
+
+Why?
+
+Remember:
+
+print(10)
+
+prints an integer object.
+
+print("Hello")
+
+prints a string object.
+
+Similarly,
+
+print(Student)
+
+prints the class object itself.
+
+Python says:
+
+"This is the class named Student."
+
+Think of it like Functions
+
+Suppose you write:
+
+def hello():
+    pass
+
+print(hello)
+
+Does Python call the function?
+
+❌ No.
+
+It prints something like:
+
+<function hello at 0x...>
+
+Because you're printing the function object, not calling it.
+
+Similarly:
+
+print(Student)
+
+prints the class, not an object of that class.
+'''
+
+
