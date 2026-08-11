@@ -389,3 +389,162 @@ The student changes.
 self is like "the student currently standing in front of the teacher."
 
 '''
+
+
+
+
+'''
+Visual Representation
+                Student Class
+                     │
+                     │
+         __init__(self)
+                     │
+     ┌───────────────┼───────────────┐
+     │               │               │
+  rahul          priya           amit
+     │               │               │
+self = rahul    self = priya    self = amit
+
+One class.
+
+Many objects.
+
+self always points to the object currently using the class.
+
+🚀 NOW...
+
+We're finally ready for the line that confuses almost everyone.
+
+self.name = name
+
+Don't panic.
+
+We'll break it into two parts.
+
+Part 1
+name
+
+Where does this name come from?
+
+Look carefully.
+
+rahul = Student("Rahul", 20, "Python")
+
+Python automatically calls:
+
+__init__(rahul, "Rahul", 20, "Python")
+
+So inside the constructor:
+
+name = "Rahul"
+age = 20
+course = "Python"
+
+These are temporary variables (parameters).
+
+Part 2
+self.name
+
+Remember:
+
+For Rahul,
+
+self = rahul
+
+So this becomes:
+
+rahul.name
+
+Python creates a new attribute called name inside the Rahul object.
+
+Then:
+
+self.name = name
+
+becomes:
+
+rahul.name = "Rahul"
+Let's trace it.
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+rahul = Student("Rahul")
+Step 1
+
+Python creates the object:
+
+rahul
+Step 2
+
+Python automatically calls:
+
+__init__(rahul, "Rahul")
+
+Now inside the constructor:
+
+self = rahul
+name = "Rahul"
+Step 3
+
+Python executes:
+
+self.name = name
+
+Substitute the values:
+
+rahul.name = "Rahul"
+
+Now the object becomes:
+
+rahul
+└── name → Rahul
+
+🎉 That's it!
+
+⭐ Golden Rule
+
+The right side:
+
+name
+
+is the parameter (temporary value received by the constructor).
+
+The left side:
+
+self.name
+
+is the attribute stored permanently inside the object.
+
+Think of it as:
+
+Temporary value
+      │
+      ▼
+name = "Rahul"
+      │
+      ▼
+Stored permanently
+      │
+      ▼
+self.name
+'''
+
+
+
+# class Student:
+
+#     def __init__(self, name):
+#         self.name = name
+#         print("Inside:", name)
+
+# rahul = Student("Rahul")
+
+# print("Outside:", rahul.name)
+# # print(name)
+
+
+
+
