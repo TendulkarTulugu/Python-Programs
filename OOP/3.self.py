@@ -546,5 +546,46 @@ self.name
 # # print(name)
 
 
+'''
+Inside: Rahul
+Outside: Rahul
+NameError: name is not defined
+'''
 
+
+
+
+'''
+Why?
+
+Inside the constructor:
+
+name = "Rahul"
+
+name is a local parameter.
+
+But:
+
+self.name = name
+
+stores "Rahul" inside the rahul object.
+
+After __init__() finishes:
+
+name                 ❌ gone
+rahul                ✅ exists
+    └── name         → "Rahul"
+
+So:
+
+print(rahul.name)
+
+✅ works.
+
+But:
+
+print(name)
+
+❌ NameError.
+'''
 
