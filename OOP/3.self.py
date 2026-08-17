@@ -589,3 +589,40 @@ print(name)
 ❌ NameError.
 '''
 
+
+
+
+class Student:
+
+    def __init__(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
+
+rahul = Student("Rahul", 20, "Python")
+priya = Student("Priya", 21, "Java")
+
+print(rahul.name)
+print(rahul.age)
+print(priya.name)
+print(priya.course)
+
+
+
+# What will it print?
+
+# And one important question:
+
+# Does Rahul's data affect Priya's data? Why?
+
+
+
+'''
+Rahul
+20
+Priya
+Java
+
+
+No, bcz its different object in the class.
+'''
