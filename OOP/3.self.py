@@ -626,3 +626,133 @@ Java
 
 No, bcz its different object in the class.
 '''
+
+
+
+
+
+
+'''
+⭐ This is a major OOP concept
+
+Look at the constructor:
+
+def __init__(self, name, age, course):
+    self.name = name
+    self.age = age
+    self.course = course
+
+The parameters:
+
+name
+age
+course
+
+receive values temporarily.
+
+The attributes:
+
+self.name
+self.age
+self.course
+
+store those values inside the specific object.
+
+So:
+
+rahul = Student("Rahul", 20, "Python")
+
+creates:
+
+rahul
+├── name = Rahul
+├── age = 20
+└── course = Python
+
+while:
+
+priya = Student("Priya", 21, "Java")
+
+creates:
+
+priya
+├── name = Priya
+├── age = 21
+└── course = Java
+'''
+
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+rahul = Student("Rahul", 20)
+priya = Student("Priya", 21)
+
+rahul.age = 25
+
+print(rahul.age)
+print(priya.age)
+
+
+
+# Predict:
+# What is the first output? --- 25
+# What is the second output? --- 21
+# Why doesn't changing rahul.age change priya.age? --- # Changing Rahul's form doesn't touch Priya's form.
+
+
+
+
+'''
+🔥 Now let's connect this back to self
+
+When Rahul's object was created:
+
+rahul = Student("Rahul", 20)
+
+inside __init__:
+
+self = rahul
+
+So:
+
+self.age = age
+
+became:
+
+rahul.age = 20
+
+For Priya:
+
+priya = Student("Priya", 21)
+
+inside __init__:
+
+self = priya
+
+So:
+
+self.age = age
+
+became:
+
+priya.age = 21
+
+That's why self is so important.
+'''
+
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+rahul = Student("Rahul")
+priya = Student("Priya")
+
+rahul.name = "Ravi"
+
+print(rahul.name) #-- Ravi
+print(priya.name) #-- Priya
