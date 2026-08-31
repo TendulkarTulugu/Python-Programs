@@ -62,8 +62,8 @@ print(type(tiny))
 
 # Boolean
 
-a=True
-b=False
+a=True #1
+b=False #0
 print(type(a))
 print(a)
 print(type(b))
