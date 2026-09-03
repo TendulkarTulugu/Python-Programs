@@ -4,7 +4,7 @@
 num=int(input('Enter your number:'))
 print('Square of the give number is:',num**2)
 
-# using f-strings
+# using f-strings-- string interpolation
 print(f'Square of {num} is {num**2}')
 
 
