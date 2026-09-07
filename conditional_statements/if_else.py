@@ -34,7 +34,7 @@ if n==10:
 else:
     print('n is not 10')
 
-# here the condition checks that n is equal to 100 or not.
+# here the condition checks that n is equal to 10 or not.
 # The if block is not executed bcz the condition is not true. 
 # so, the else block is executed
 
@@ -51,10 +51,11 @@ else:
 
 a=25
 if a==35:
-    print('a is 25')
+    print('a is 35')
 elif a==30:
     print('a is 30')
-elif a==35:
-    print('a is 35')
+elif a==45:
+    print('a is 45')
 else:
-    print('a is not 30,25 or 35')
+    print('a is not 30,35 or 35')
+
